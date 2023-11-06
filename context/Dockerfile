@@ -3,8 +3,8 @@ FROM alpine:latest
 
 RUN apk update  && \
     apk add  --no-cache --update \
-        gcc make automake gcc g++ python3 python3-dev cython freetype-dev
-RUN pip3 install --upgrade pip
+        gcc make automake gcc g++ python3 python3-dev cython freetype-dev texlive-xetex wget
+RUN pip install --upgrade pip
 
 WORKDIR /docs
 ADD requirements.txt /docs

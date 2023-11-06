@@ -26,10 +26,10 @@ html:
 install:
 	pip install -r requirements.txt
 	cat /proc/version
-	yum install wget
+	#yum install wget
 	wget https://github.com/jgm/pandoc/releases/download/2.14.0.3/pandoc-2.14.0.3-linux-amd64.tar.gz
 	tar -xvf pandoc-2.14.0.3-linux-amd64.tar.gz
-	yum install texlive-xetex
+	#yum install texlive-xetex
 	pwd
 	ln -s /vercel/path0/pandoc-2.14.0.3/bin/pandoc /usr/bin/pandoc
 	export PATH="/usr/bin:$PATH"
