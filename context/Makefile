@@ -24,6 +24,9 @@ html:
 	sphinx-build -a ./docs ./build
 
 install:
+	cat /proc/version
+
+install2:
 	python3 -m pip install -r requirements.txt
 	cat /proc/version
 	#yum install wget
