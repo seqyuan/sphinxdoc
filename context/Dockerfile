@@ -1,4 +1,5 @@
-FROM sphinxdoc/sphinx
+#FROM sphinxdoc/sphinx
+continuumio/miniconda3:latest
 
 WORKDIR /docs
 ADD requirements.txt /docs
