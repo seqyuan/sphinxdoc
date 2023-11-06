@@ -24,7 +24,7 @@ html:
 	sphinx-build -a ./docs ./build
 
 install:
-	pip install -r requirements.txt
+	python3 -m pip install -r requirements.txt
 	cat /proc/version
 	#yum install wget
 	wget https://github.com/jgm/pandoc/releases/download/2.14.0.3/pandoc-2.14.0.3-linux-amd64.tar.gz
