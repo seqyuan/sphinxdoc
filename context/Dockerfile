@@ -1,9 +1,8 @@
-#FROM sphinxdoc/sphinx
-FROM amazonlinux:latest
+FROM sphinxdoc/sphinx
+#FROM python:3.7
 
-RUN yum update -y && \
-		yum install -y python3 python3-devel texlive-xetex wget
-
+RUN apt-get update -y && \
+    apt-get install -y python3-pip wget
 
 WORKDIR /docs
 ADD requirements.txt /docs
