@@ -10,4 +10,4 @@ sphinx_copybutton
 nbsphinx
 nbsphinx_link
 sphinx_gallery
-sphinx_tags
+#sphinx_tags
