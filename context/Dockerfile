@@ -1,10 +1,9 @@
 #FROM sphinxdoc/sphinx
-FROM alpine:latest
+FROM amazonlinux:latest
 
-RUN apk update  && \
-    apk add  --no-cache --update \
-        gcc make automake gcc g++ python3 python3-dev cython freetype-dev texlive-xetex wget
-RUN pip install --upgrade pip
+RUN yum update -y && \
+		yum install -y python3 python3-devel texlive-xetex wget
+
 
 WORKDIR /docs
 ADD requirements.txt /docs
